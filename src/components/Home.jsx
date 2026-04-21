@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import heroImg from '../assets/hero.jpg';
-import aboutImg from '../assets/about.jpg';
-import successImg from '../assets/success.jpg';
-import moneyImg from '../assets/money.jpg';
-import relationshipsImg from '../assets/relationships.jpg';
-import videosImg from '../assets/videos.jpg';
+import heroImg from '../assets/hero.webp';
+import aboutImg from '../assets/about.webp';
+import successImg from '../assets/success.webp';
+import moneyImg from '../assets/money.webp';
+import relationshipsImg from '../assets/relationships.webp';
+import videosImg from '../assets/videos.webp';
 
 // Floating particles
 const Particles = () => (
@@ -341,7 +341,7 @@ export default function Home() {
         >
           <img
             src={heroImg}
-            alt="Tokyo City"
+            alt="Cityscape"
             style={{
               width: '100%', height: '100%',
               objectFit: 'cover',
@@ -575,7 +575,7 @@ export default function Home() {
               textTransform: 'uppercase',
               marginBottom: '16px',
             }}>
-              Experience The Pulse of Tokyo
+              Experience The Pulse of Success
             </div>
             <h2 style={{
               fontFamily: 'Cinzel, serif',
