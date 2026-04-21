@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import heroImg from '../assets/hero.webp';
-import aboutImg from '../assets/about.webp';
-import successImg from '../assets/success.webp';
-import moneyImg from '../assets/money.webp';
-import relationshipsImg from '../assets/relationships.webp';
-import videosImg from '../assets/videos.webp';
+import heroImg from '../assets/hero.jpeg';
+import aboutImg from '../assets/about.jpeg';
+import successImg from '../assets/success.jpeg';
+import moneyImg from '../assets/money.jpeg';
+import relationshipsImg from '../assets/relationships.jpeg';
+import videosImg from '../assets/videos.jpeg';
 
 // Floating particles
 const Particles = () => (
