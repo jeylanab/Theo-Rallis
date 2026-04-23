@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const navItems = [
-  { name: 'About', href: '#about', icon: '◈' },
+  { name: 'About', href: '#about', icon: '◆' },
   { name: 'Success', href: '#success', icon: '◆' },
-  { name: 'Money', href: '#money', icon: '◇' },
-  { name: 'Relationships', href: '#relationships', icon: '◈' },
-  { name: 'Free Videos', href: '#videos', icon: '▶' },
+  { name: 'Money · Money · Money', href: '#money', icon: '◆' },
+  { name: 'Relationships', href: '#relationships', icon: '◆' },
+  { name: 'Free Videos', href: '#videos', icon: '◆' },
 ];
 
 export default function Navbar() {

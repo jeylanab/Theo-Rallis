@@ -100,21 +100,8 @@ const WelcomeVideo = () => {
           alignItems: 'center',
           gap: '6px',
         }}>
-          <div style={{
-            width: '6px', height: '6px',
-            borderRadius: '50%',
-            background: '#c9a84c',
-            animation: 'pulseGlow 2s infinite',
-          }} />
-          <span style={{
-            fontFamily: 'Montserrat, sans-serif',
-            fontSize: '0.6rem',
-            color: 'rgba(201,168,76,0.9)',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-          }}>
-            Welcome Video
-          </span>
+
+
         </div>
       </div>
       {/* Corner accent */}
@@ -405,21 +392,7 @@ export default function Home() {
             }}
           />
 
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.7 }}
-            style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '0.72rem',
-              letterSpacing: '0.5em',
-              color: 'rgba(201,168,76,0.8)',
-              textTransform: 'uppercase',
-            }}
-          >
-            Theo Rallis Welcomes You
-          </motion.p>
+
 
           {/* Main headline */}
           <div style={{ overflow: 'hidden' }}>
@@ -437,85 +410,40 @@ export default function Home() {
                 textShadow: '0 4px 60px rgba(0,0,0,0.8)',
               }}
             >
-              <span style={{
-                display: 'block',
-                background: 'linear-gradient(135deg, #f5f0e8 0%, #ffffff 50%, #f5f0e8 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                Success
-              </span>
-              <span style={{
-                display: 'block',
-                background: 'linear-gradient(135deg, #9a7a2e 0%, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, #9a7a2e 100%)',
-                backgroundSize: '200% auto',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                animation: 'goldShimmer 3s linear infinite',
-              }}>
-                Lies Within
-              </span>
+<span
+  style={{
+    display: 'block',
+    background:
+      'linear-gradient(135deg, #9a7a2e 0%, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, #9a7a2e 100%)',
+    backgroundSize: '200% auto',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    animation: 'goldShimmer 3s linear infinite',
+  }}
+>
+  Success
+</span>
+
+<span
+  style={{
+    display: 'block',
+    background:
+      'linear-gradient(135deg, #9a7a2e 0%, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, #9a7a2e 100%)',
+    backgroundSize: '200% auto',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    animation: 'goldShimmer 3s linear infinite',
+  }}
+>
+  Lies Within
+</span>
             </motion.h1>
           </div>
 
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.3, duration: 0.8 }}
-            style={{
-              fontFamily: 'Cormorant Garamond, serif',
-              fontSize: 'clamp(1rem, 2vw, 1.3rem)',
-              color: 'rgba(245,240,232,0.7)',
-              letterSpacing: '0.05em',
-              maxWidth: '500px',
-              fontStyle: 'italic',
-            }}
-          >
-            Master your mindset. Build your wealth. Live with purpose.
-          </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.7 }}
-            style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '8px' }}
-          >
-            <motion.button
-              whileHover={{ scale: 1.04, boxShadow: '0 0 40px rgba(201,168,76,0.5)' }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="btn-gold"
-            >
-              Get Started
-            </motion.button>
 
-            <motion.button
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => document.querySelector('#videos')?.scrollIntoView({ behavior: 'smooth' })}
-              style={{
-                background: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(201,168,76,0.4)',
-                color: 'rgba(201,168,76,0.9)',
-                fontFamily: 'Cinzel, serif',
-                fontSize: '0.7rem',
-                fontWeight: 600,
-                letterSpacing: '0.2em',
-                padding: '14px 36px',
-                cursor: 'pointer',
-                borderRadius: '2px',
-                textTransform: 'uppercase',
-                backdropFilter: 'blur(10px)',
-                transition: 'all 0.3s ease',
-              }}
-            >
-              ▶  Free Videos
-            </motion.button>
-          </motion.div>
 
           {/* Scroll indicator */}
           <motion.div
@@ -552,150 +480,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ═══════════════════════════════ VIDEO FEATURE SECTION ═══════════════════════ */}
-      <section style={{
-        padding: 'clamp(60px, 10vw, 120px) clamp(20px, 5vw, 80px)',
-        position: 'relative',
-        background: 'linear-gradient(180deg, var(--purple-deep) 0%, rgba(42,21,69,0.3) 50%, var(--purple-deep) 100%)',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          {/* Section header */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            style={{ textAlign: 'center', marginBottom: '60px' }}
-          >
-            <div style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '0.65rem',
-              letterSpacing: '0.5em',
-              color: 'rgba(201,168,76,0.6)',
-              textTransform: 'uppercase',
-              marginBottom: '16px',
-            }}>
-              Experience The Pulse of Success
-            </div>
-            <h2 style={{
-              fontFamily: 'Cinzel, serif',
-              fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
-              fontWeight: 700,
-              letterSpacing: '0.06em',
-            }} className="gold-text">
-              Featured Content
-            </h2>
-            <div style={{
-              width: '60px', height: '1px',
-              background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
-              margin: '20px auto 0',
-            }} />
-          </motion.div>
-
-          {/* Video player mockup */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9 }}
-            style={{
-              position: 'relative',
-              borderRadius: '8px',
-              overflow: 'hidden',
-              border: '1px solid rgba(201,168,76,0.25)',
-              boxShadow: '0 40px 120px rgba(0,0,0,0.6), 0 0 60px rgba(201,168,76,0.1)',
-              background: '#000',
-              aspectRatio: '16/7',
-              maxHeight: '520px',
-            }}
-          >
-            <img
-              src={heroImg}
-              alt="Featured Video"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }}
-              onError={e => { e.target.style.display = 'none'; }}
-            />
-
-            {/* Video overlay content */}
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'linear-gradient(135deg, rgba(13,6,18,0.6), rgba(42,21,69,0.4))',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              gap: '20px',
-            }}>
-              {/* Big play button */}
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                animate={{ boxShadow: ['0 0 30px rgba(201,168,76,0.3)', '0 0 70px rgba(201,168,76,0.6)', '0 0 30px rgba(201,168,76,0.3)'] }}
-                transition={{ repeat: Infinity, duration: 2.5 }}
-                style={{
-                  width: '80px', height: '80px',
-                  borderRadius: '50%',
-                  background: 'rgba(201,168,76,0.15)',
-                  border: '2px solid rgba(201,168,76,0.7)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  backdropFilter: 'blur(10px)',
-                }}
-              >
-                <svg width="28" height="32" viewBox="0 0 28 32" fill="none">
-                  <path d="M5 3l22 13L5 29V3z" fill="#c9a84c" />
-                </svg>
-              </motion.div>
-
-              <div style={{
-                fontFamily: 'Cinzel, serif',
-                fontSize: '0.7rem',
-                letterSpacing: '0.3em',
-                color: 'rgba(201,168,76,0.8)',
-                textTransform: 'uppercase',
-              }}>
-                Play Intro
-              </div>
-            </div>
-
-            {/* Video progress bar decoration */}
-            <div style={{
-              position: 'absolute',
-              bottom: 0, left: 0, right: 0,
-              height: '3px',
-              background: 'rgba(255,255,255,0.1)',
-            }}>
-              <motion.div
-                initial={{ width: '0%' }}
-                animate={{ width: '35%' }}
-                transition={{ delay: 1, duration: 2, ease: 'easeOut' }}
-                style={{
-                  height: '100%',
-                  background: 'linear-gradient(90deg, #9a7a2e, #c9a84c)',
-                }}
-              />
-            </div>
-
-            {/* Corner decorations */}
-            {['top-left', 'top-right', 'bottom-left', 'bottom-right'].map(corner => (
-              <div key={corner} style={{
-                position: 'absolute',
-                ...(corner.includes('top') ? { top: '12px' } : { bottom: '12px' }),
-                ...(corner.includes('left') ? { left: '12px' } : { right: '12px' }),
-                width: '20px', height: '20px',
-                borderTop: corner.includes('top') ? '1.5px solid rgba(201,168,76,0.6)' : 'none',
-                borderBottom: corner.includes('bottom') ? '1.5px solid rgba(201,168,76,0.6)' : 'none',
-                borderLeft: corner.includes('left') ? '1.5px solid rgba(201,168,76,0.6)' : 'none',
-                borderRight: corner.includes('right') ? '1.5px solid rgba(201,168,76,0.6)' : 'none',
-              }} />
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
       {/* ═══════════════════════════════ SECTIONS GRID ═══════════════════════════════ */}
       <section style={{
         padding: 'clamp(40px, 8vw, 100px) clamp(20px, 5vw, 80px)',
@@ -710,77 +494,6 @@ export default function Home() {
         ))}
       </section>
 
-      {/* ═══════════════════════════════ FOOTER CTA ═══════════════════════════════ */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        style={{
-          padding: 'clamp(60px, 10vw, 120px) clamp(20px, 5vw, 80px)',
-          textAlign: 'center',
-          position: 'relative',
-          overflow: 'hidden',
-        }}
-      >
-        {/* Background glow */}
-        <div style={{
-          position: 'absolute',
-          top: '50%', left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: '600px', height: '300px',
-          borderRadius: '50%',
-          background: 'radial-gradient(ellipse, rgba(107,63,160,0.2) 0%, transparent 70%)',
-          filter: 'blur(60px)',
-        }} />
-
-        <div style={{
-          position: 'relative',
-          maxWidth: '600px',
-          margin: '0 auto',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '28px',
-        }}>
-          <div style={{
-            width: '40px', height: '1px',
-            background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
-          }} />
-
-          <h2 style={{
-            fontFamily: 'Cinzel, serif',
-            fontSize: 'clamp(1.6rem, 4vw, 2.5rem)',
-            fontWeight: 700,
-            letterSpacing: '0.06em',
-          }} className="gold-text">
-            Begin Your Journey
-          </h2>
-
-          <p style={{
-            fontFamily: 'Cormorant Garamond, serif',
-            fontSize: '1.15rem',
-            lineHeight: 1.7,
-            color: 'rgba(245,240,232,0.65)',
-            fontStyle: 'italic',
-          }}>
-            Join thousands who have already discovered the power within. Your transformation starts with a single step.
-          </p>
-
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: '0 0 50px rgba(201,168,76,0.5)' }}
-            whileTap={{ scale: 0.97 }}
-            className="btn-gold"
-            style={{ fontSize: '0.85rem', padding: '16px 50px' }}
-          >
-            Start Today — It's Free
-          </motion.button>
-
-          <div style={{
-            width: '40px', height: '1px',
-            background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
-          }} />
-        </div>
-      </motion.section>
 
       {/* Footer */}
       <footer style={{
