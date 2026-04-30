@@ -127,32 +127,7 @@ export default function Navbar() {
             </motion.div>
           ))}
 
-          {/* CTA Button */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8 }}
-            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(201,168,76,0.5)' }}
-            whileTap={{ scale: 0.97 }}
-            onClick={() => handleNavClick('#videos')}
-            style={{
-              background: 'linear-gradient(135deg, #9a7a2e, #c9a84c, #e8c96a)',
-              color: '#0d0612',
-              fontFamily: 'Cinzel, serif',
-              fontSize: '0.65rem',
-              fontWeight: 700,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              padding: '10px 22px',
-              border: 'none',
-              borderRadius: '2px',
-              cursor: 'pointer',
-              marginLeft: '8px',
-              transition: 'all 0.3s ease',
-            }}
-          >
-            Get Started
-          </motion.button>
+
         </div>
 
         {/* Mobile Hamburger */}
